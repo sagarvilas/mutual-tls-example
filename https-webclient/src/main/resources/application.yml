@@ -1,0 +1,17 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-alias: server
+    key-store: classpath:my-keystore.jks
+    key-store-password: storepass123
+    key-store-type: jks
+client:
+  ssl:
+    one-way-authentication-enabled: false
+    two-way-authentication-enabled: true
+    key-store: classpath:my-keystore.jks
+    key-password: storepass123
+    key-store-password: storepass123
+    trust-store: classpath:my-truststore.jks
+    trust-store-password: storepass123
