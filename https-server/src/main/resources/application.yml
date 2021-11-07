@@ -2,10 +2,10 @@ server:
   port: 7443
   ssl:
     enabled: true
-    key-alias: server
-    key-store: classpath:my-keystore.jks
+    key-alias: mtls-sample
+    key-store: classpath:mtls-keystore.jks
     key-store-password: storepass123
     key-store-type: jks
-    trust-store: classpath:my-truststore.jks
+    trust-store: classpath:mtls-truststore.jks
     trust-store-password: storepass123
     client-auth: need
