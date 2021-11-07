@@ -8,8 +8,6 @@ server:
     key-store-type: jks
 client:
   ssl:
-    one-way-authentication-enabled: false
-    two-way-authentication-enabled: true
     key-store: classpath:my-keystore.jks
     key-password: storepass123
     key-store-password: storepass123
